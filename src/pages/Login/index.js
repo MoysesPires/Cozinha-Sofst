@@ -8,9 +8,7 @@ import ImgLog from '../../../assets/ImgLog.png';
 import { Button } from '../../components/ButtonDefault';
 import { ButtonReturn } from '../../components/ButtonReturn';
 import { Input } from '../../components/Input';
-import { TxtLabel } from '../../components/TxtLabel';
-import { TxtTittle } from '../../components/TxtTittle';
-import { TxtUnderline } from '../../components/TxtUnderline';
+import { Label } from '../../components/Label';
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState('');
@@ -55,11 +53,13 @@ export default function Login({ navigation }) {
 
       <View style={styles.Form}>
         <View style={styles.TxtPrincipal}>
-          <TxtTittle text="Login" />
+          
         </View>
 
         <View style={styles.InpEmail}>
-          <TxtLabel text="EMAIL" />
+          <Label 
+            text="Abrir Detalhes" 
+            size="large"/>
           <Input
             onChangeText={(text) => {
               console.log(text)
@@ -72,7 +72,7 @@ export default function Login({ navigation }) {
         </View>
 
         <View style={styles.InpPassword}>
-          <TxtLabel text="SENHA" />
+          
           <Input
             onChangeText={(text) => {
               console.log(text)
@@ -86,11 +86,11 @@ export default function Login({ navigation }) {
         </View>
 
         <View style={styles.EsqSenha}>
-          <TxtUnderline text="Esqueceu sua senha?" />
+          
         </View>
 
         <View style={styles.Log}>
-          <TxtUnderline onPress={TelaRegister} text="Crie uma conta" />
+          
         </View>
 
         <View style={styles.Buttons}>

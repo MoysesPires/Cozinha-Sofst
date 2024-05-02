@@ -26,7 +26,6 @@ return(
         </View>
 
       <View style={styles.Buttons}>
-        {/* resolver o problema com o text "Login" que retorna como Conecte-se */}
         <Button text="Login" onPress={TelaLogin}/>
       
       <View style={styles.Btn2}>

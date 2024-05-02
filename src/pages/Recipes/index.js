@@ -2,8 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import {styles} from "./style.js";
 
-import { ButtonReturn } from '../../components/ButtonReturn';
-import { TxtTittle } from '../../components/TxtTittle';
+import Label from '../../components/Label/index.js';
 
 export default function Recipes({navigation}) {
 
@@ -13,12 +12,9 @@ export default function Recipes({navigation}) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.BtnVoltar}>
-        <ButtonReturn onPress={TelaHome} />
-      </View>
-      
-      <TxtTittle text="Essa é a Home" />
-    
+      <Label 
+        text="Abrir Detalhes" 
+        size="large"/>
     </View>
   );
 
